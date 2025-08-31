@@ -127,18 +127,23 @@
         speakAndThen("Opening YouTube", () => {
           window.open("https://youtube.com", "_blank");
         });
-      } else if (command.includes("open google")) {
+      }
+      
+      else if (command.includes("open google")) {
         speakAndThen("Opening Google", () => {
           window.open("https://google.com", "_blank");
         });
+
       } else if (command.includes("what's the time") || command.includes("what is the time")) {
         const now = new Date();
         const time = now.toLocaleTimeString();
-        speakAndThen("The time is " + time, () => {});
-      } else if (command.includes("change background")) {
+        speakAndThen("The Current time is " + time, () => {});
+      }
+       else if (command.includes("change background")) {
         document.body.style.background = "radial-gradient(circle, #001133, #000000)";
         speakAndThen("Background changed", () => {});
-      } else {
+      }
+       else {
         speakAndThen("Sorry, I didn't understand that command.", () => {});
       }
     }
