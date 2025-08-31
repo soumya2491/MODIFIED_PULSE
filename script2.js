@@ -75,13 +75,13 @@
         return `The square root of ${num} is ${Math.sqrt(num)}`;
       }
 
-      // let factMatch = command.match(/factorial of (\d+)/);
-      // if (factMatch) {
-      //   let n = parseInt(factMatch[1]);
-      //   let f = factorial(n);
-      //   if (f === null) return "Error, factorial of negative number not defined.";
-      //   return `The factorial of ${n} is ${f}`;
-      // }
+      let factMatch = command.match(/factorial of (\d+)/);
+      if (factMatch) {
+        let n = parseInt(factMatch[1]);
+        let f = factorial(n);
+        if (f === null) return "Error, factorial of negative number not defined.";
+        return `The factorial of ${n} is ${f}`;
+      }
 
       // let sinMatch = command.match(/sine of (\d+\.?\d*) degrees?/);
       // if (sinMatch) {
