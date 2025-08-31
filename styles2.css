@@ -67,7 +67,7 @@ button:hover {
 }
 
 /* Pulse rings - keep position absolute inside pulse container to center them */
-/* .pulse-ring {
+.pulse-ring {
   position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 20px 4px rgba(0, 180, 255, 0.8);
@@ -100,10 +100,10 @@ button:hover {
 } */
 
 /* @keyframes pulseGlow {
-  0% {
+  /* 0% {
     transform: scale(0.7);
     opacity: 0.8;
-    box-shadow: 0 0 10px 4px rgba(0, 180, 255, 0.8);
+    box-shadow: 0 0 10px 4px rgba(0, 180, 255, 0.8);    
   }
   50% {
     transform: scale(1.2);
