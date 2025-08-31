@@ -60,13 +60,13 @@
         return `The result of division is ${res}`;
       }
 
-      // let powMatch = command.match(/(power|raised to) (\d+\.?\d*) (to|of) (\d+\.?\d*)/);
-      // if (powMatch) {
-      //   let base = parseFloat(powMatch[2]);
-      //   let exp = parseFloat(powMatch[4]);
-      //   let res = Math.pow(base, exp);
-      //   return `The result of ${base} raised to the power ${exp} is ${res}`;
-      // }
+      let powMatch = command.match(/(power|raised to) (\d+\.?\d*) (to|of) (\d+\.?\d*)/);
+      if (powMatch) {
+        let base = parseFloat(powMatch[2]);
+        let exp = parseFloat(powMatch[4]);
+        let res = Math.pow(base, exp);
+        return `The result of ${base} raised to the power ${exp} is ${res}`;
+      }
 
       // let sqrtMatch = command.match(/square root of (\d+\.?\d*)/);
       // if (sqrtMatch) {
