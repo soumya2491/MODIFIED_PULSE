@@ -68,12 +68,12 @@
         return `The result of ${base} raised to the power ${exp} is ${res}`;
       }
 
-      // let sqrtMatch = command.match(/square root of (\d+\.?\d*)/);
-      // if (sqrtMatch) {
-      //   let num = parseFloat(sqrtMatch[1]);
-      //   if (num < 0) return "Error, negative input for square root.";
-      //   return `The square root of ${num} is ${Math.sqrt(num)}`;
-      // }
+      let sqrtMatch = command.match(/square root of (\d+\.?\d*)/);
+      if (sqrtMatch) {
+        let num = parseFloat(sqrtMatch[1]);
+        if (num < 0) return "Error, negative input for square root.";
+        return `The square root of ${num} is ${Math.sqrt(num)}`;
+      }
 
       // let factMatch = command.match(/factorial of (\d+)/);
       // if (factMatch) {
