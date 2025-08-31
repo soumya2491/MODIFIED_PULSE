@@ -95,11 +95,11 @@
         return `The cosine of ${deg} degrees is ${Math.cos(degToRad(deg)).toFixed(6)}`;
       }
 
-      // let tanMatch = command.match(/tangent of (\d+\.?\d*) degrees?/);
-      // if (tanMatch) {
-      //   let deg = parseFloat(tanMatch[1]);
-      //   return `The tangent of ${deg} degrees is ${Math.tan(degToRad(deg)).toFixed(6)}`;
-      // }
+      let tanMatch = command.match(/tangent of (\d+\.?\d*) degrees?/);
+      if (tanMatch) {
+        let deg = parseFloat(tanMatch[1]);
+        return `The tangent of ${deg} degrees is ${Math.tan(degToRad(deg)).toFixed(6)}`;
+      }
 
       return null;
     }
