@@ -83,11 +83,11 @@
         return `The factorial of ${n} is ${f}`;
       }
 
-      // let sinMatch = command.match(/sine of (\d+\.?\d*) degrees?/);
-      // if (sinMatch) {
-      //   let deg = parseFloat(sinMatch[1]);
-      //   return `The sine of ${deg} degrees is ${Math.sin(degToRad(deg)).toFixed(6)}`;
-      // }
+      let sinMatch = command.match(/sine of (\d+\.?\d*) degrees?/);
+      if (sinMatch) {
+        let deg = parseFloat(sinMatch[1]);
+        return `The sine of ${deg} degrees is ${Math.sin(degToRad(deg)).toFixed(6)}`;
+      }
 
       // let cosMatch = command.match(/cosine of (\d+\.?\d*) degrees?/);
       // if (cosMatch) {
