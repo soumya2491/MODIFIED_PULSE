@@ -97,10 +97,10 @@ button:hover {
   margin: -110px 0 0 -110px;
   box-shadow: 0 0 40px 8px rgba(0, 255, 255, 0.4);
   background: radial-gradient(circle, rgba(0, 255, 255, 0.15), transparent 70%);
-} */
+} 
 
 /* @keyframes pulseGlow {
-  /* 0% {
+  0% {
     transform: scale(0.7);
     opacity: 0.8;
     box-shadow: 0 0 10px 4px rgba(0, 180, 255, 0.8);    
@@ -115,4 +115,4 @@ button:hover {
     opacity: 0;
     box-shadow: 0 0 50px 20px rgba(0, 255, 255, 0);
   }
-} */
+} 
