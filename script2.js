@@ -89,11 +89,11 @@
         return `The sine of ${deg} degrees is ${Math.sin(degToRad(deg)).toFixed(6)}`;
       }
 
-      // let cosMatch = command.match(/cosine of (\d+\.?\d*) degrees?/);
-      // if (cosMatch) {
-      //   let deg = parseFloat(cosMatch[1]);
-      //   return `The cosine of ${deg} degrees is ${Math.cos(degToRad(deg)).toFixed(6)}`;
-      // }
+      let cosMatch = command.match(/cosine of (\d+\.?\d*) degrees?/);
+      if (cosMatch) {
+        let deg = parseFloat(cosMatch[1]);
+        return `The cosine of ${deg} degrees is ${Math.cos(degToRad(deg)).toFixed(6)}`;
+      }
 
       // let tanMatch = command.match(/tangent of (\d+\.?\d*) degrees?/);
       // if (tanMatch) {
