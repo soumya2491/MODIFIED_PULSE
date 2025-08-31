@@ -57,14 +57,14 @@ button:hover {
 }
 
 /* Pulse container inside .container */
-/* .pulse-container {
+.pulse-container {
   position: relative;  /* Change from absolute to relative */
   width: 160px;
   height: 160px;
   margin: 20px auto 0 auto; /* margin top to separate from panel, horizontally centered */
   pointer-events: none;
   z-index: 10;
-} */
+}
 
 /* Pulse rings - keep position absolute inside pulse container to center them */
 /* .pulse-ring {
