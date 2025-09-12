@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #000;
+  overflow: hidden;
+  color: cyan;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  position: relative;  /* important to position pulse rings inside */
+  text-align: center;
+  margin-top: 5vh;
+  background-color: rgba(0, 0, 50, 0.3);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px cyan;
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* h1 {
+  font-size: 2em;
+  text-shadow: 0 0 10px cyan;
+}
+
+button {
+  padding: 10px 20px;
+  background: transparent;
+  color: cyan;
+  border: 2px solid cyan;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px 0;
+}
+
+button:hover {
+  background: cyan;
+  color: black;
+}
+
+.panel {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+/* Pulse container inside .container */
+.pulse-container {
+  position: relative;  /* Change from absolute to relative */
+  width: 160px;
+  height: 160px;
+  margin: 20px auto 0 auto; /* margin top to separate from panel, horizontally centered */
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Pulse rings - keep position absolute inside pulse container to center them */
+.pulse-ring {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 4px rgba(0, 180, 255, 0.8);
+  background: radial-gradient(circle, rgba(0, 180, 255, 0.3), transparent 70%);
+  filter: drop-shadow(0 0 10px #00b4ff);
+  animation: pulseGlow 2.5s ease-out infinite;
+  width: 140px;
+  height: 140px;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -70px;
+}
+
+.pulse-ring:nth-child(2) {
+  animation-delay: 0.8s;
+  width: 180px;
+  height: 180px;
+  margin: -90px 0 0 -90px;
+  box-shadow: 0 0 30px 5px rgba(0, 220, 255, 0.6);
+  background: radial-gradient(circle, rgba(0, 220, 255, 0.2), transparent 70%);
+}
+
+.pulse-ring:nth-child(3) {
+  animation-delay: 1.6s;
+  width: 220px;
+  height: 220px;
+  margin: -110px 0 0 -110px;
+  box-shadow: 0 0 40px 8px rgba(0, 255, 255, 0.4);
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.15), transparent 70%);
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.8;
+    box-shadow: 0 0 10px 4px rgba(0, 180, 255, 0.8);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.4;
+    box-shadow: 0 0 30px 10px rgba(0, 220, 255, 0.5);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+    box-shadow: 0 0 50px 20px rgba(0, 255, 255, 0);
+  }
+} */
