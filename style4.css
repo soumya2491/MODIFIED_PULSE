@@ -111,11 +111,11 @@
       color: var(--muted);
       opacity: .8;
     }
-    /* .kbd {
+     .kbd {
       background: rgba(255,255,255,.06);
       border: 1px solid rgba(255,255,255,.1);
       padding: .2rem .45rem;
       border-radius: 8px;
       color: var(--text);
       font-weight: 700;
-    }    */
+    }    
