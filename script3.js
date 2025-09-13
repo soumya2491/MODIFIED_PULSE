@@ -160,16 +160,16 @@
       "self destruct"
     ];
 
-    // function isAllowedCommand(cmd) {
-    //   if (STRICT_PHRASES) {
+    function isAllowedCommand(cmd) {
+      if (STRICT_PHRASES) {
         
-    //     return allowedCommands.some(kw => cmd.includes(kw));
-    //   } else {
+        return allowedCommands.some(kw => cmd.includes(kw));
+      } else {
         
-    //     if (computeCommand(cmd)) return true;
-    //     return allowedCommands.some(kw => cmd.includes(kw.split(' ')[0])); 
-    //   }
-    // }
+        if (computeCommand(cmd)) return true;
+        return allowedCommands.some(kw => cmd.includes(kw.split(' ')[0])); 
+      }
+    }
 
     // /* ---------------- Speech Recognition lifecycle ----------------- */
     // function startListening() {
