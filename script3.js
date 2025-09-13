@@ -39,21 +39,21 @@
         voices.find(v => /en-US|en-GB/i.test(v.lang)) ||
         voices[0] || null;
     }
-    // if (synth.onvoiceschanged !== undefined) {
-    //   synth.onvoiceschanged = pickVoice;
-    // }
-    // pickVoice();
+    if (synth.onvoiceschanged !== undefined) {
+      synth.onvoiceschanged = pickVoice;
+    }
+    pickVoice();
 
-    // function speak(text) {
-    //   if (!text) return;
-    //   const utter = new SpeechSynthesisUtterance(text);
-    //   utter.voice = preferredVoice || null;
-    //   utter.lang = "en-US";
-    //   utter.pitch = 1.0;
-    //   utter.rate = 0.95;
-    //   synth.cancel(); 
-    //   synth.speak(utter);
-    // }
+    function speak(text) {
+      if (!text) return;
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.voice = preferredVoice || null;
+      utter.lang = "en-US";
+      utter.pitch = 1.0;
+      utter.rate = 0.95;
+      synth.cancel(); 
+      synth.speak(utter);
+    }
 
  
     // function factorial(n) {
