@@ -220,17 +220,17 @@
           return;
         }
 
-    //     // ----- Non-math commands -----
-    //     if (command.includes("notepad")) {
-    //       speak("Opening Notepad.");
-    //       window.open("https://anotepad.com/", "_blank");
-    //       return;
-    //     }
+        // ----- Non-math commands -----
+        if (command.includes("notepad")) {
+          speak("Opening Notepad.");
+          window.open("https://anotepad.com/", "_blank");
+          return;
+        }
 
-    //     if (command.includes("status report") || command === "status") {
-    //       speak("All systems are functional, ma'am.");
-    //       return;
-    //     }
+        if (command.includes("status report") || command === "status") {
+          speak("All systems are functional, ma'am.");
+          return;
+        }
 
     //     if (command.includes("shutdown")) {
     //       speak("Powering down in 3, 2, 1...");
