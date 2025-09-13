@@ -66,27 +66,27 @@
     const degToRad = deg => deg * Math.PI / 180;
 
 
-    // function computeCommand(command) {
-    //   // Add
-    //   let m;
-    //   m = command.match(/\badd (\d+\.?\d*) (?:and|to) (\d+\.?\d*)\b/);
-    //   if (m) return `The result of addition is ${parseFloat(m[1]) + parseFloat(m[2])}.`;
+    function computeCommand(command) {
+      // Add
+      let m;
+      m = command.match(/\badd (\d+\.?\d*) (?:and|to) (\d+\.?\d*)\b/);
+      if (m) return `The result of addition is ${parseFloat(m[1]) + parseFloat(m[2])}.`;
 
-    //   // Subtract: "subtract 4 from 10"
-    //   m = command.match(/\bsubtract (\d+\.?\d*) from (\d+\.?\d*)\b/);
-    //   if (m) return `The result of subtraction is ${parseFloat(m[2]) - parseFloat(m[1])}.`;
+      // Subtract: "subtract 4 from 10"
+      m = command.match(/\bsubtract (\d+\.?\d*) from (\d+\.?\d*)\b/);
+      if (m) return `The result of subtraction is ${parseFloat(m[2]) - parseFloat(m[1])}.`;
 
-    //   // Multiply
-    //   m = command.match(/\bmultiply (\d+\.?\d*) (?:and|by) (\d+\.?\d*)\b/);
-    //   if (m) return `The result of multiplication is ${parseFloat(m[1]) * parseFloat(m[2])}.`;
+      // Multiply
+      m = command.match(/\bmultiply (\d+\.?\d*) (?:and|by) (\d+\.?\d*)\b/);
+      if (m) return `The result of multiplication is ${parseFloat(m[1]) * parseFloat(m[2])}.`;
 
-    //   // Divide
-    //   m = command.match(/\bdivide (\d+\.?\d*) by (\d+\.?\d*)\b/);
-    //   if (m) {
-    //     const divisor = parseFloat(m[2]);
-    //     if (divisor === 0) return "Error, division by zero.";
-    //     return `The result of division is ${parseFloat(m[1]) / divisor}.`;
-    //   }
+      // Divide
+      m = command.match(/\bdivide (\d+\.?\d*) by (\d+\.?\d*)\b/);
+      if (m) {
+        const divisor = parseFloat(m[2]);
+        if (divisor === 0) return "Error, division by zero.";
+        return `The result of division is ${parseFloat(m[1]) / divisor}.`;
+      }
 
     //   // Power: support "power 2 to 3", "2 raised to 3", "2 to the power of 3"
     //   m = command.match(/\bpower (\d+\.?\d*) (?:to|of) (\d+\.?\d*)\b/);
