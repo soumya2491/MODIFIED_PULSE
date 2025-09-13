@@ -134,8 +134,8 @@
     }
 
 
-    // const WAKE_WORDS = ["pulse"]; // add "jarvis", "friday" if you want
-    // const STRICT_PHRASES = false; // set to true to require exact phrases like "open google" (so "google" alone won't work)
+    const WAKE_WORDS = ["pulse"]; // add "jarvis", "friday" if you want
+    const STRICT_PHRASES = false; // set to true to require exact phrases like "open google" (so "google" alone won't work)
 
     // const allowedCommands = [
     //   // math keywords (loose: computeCommand has strict regex anyway)
