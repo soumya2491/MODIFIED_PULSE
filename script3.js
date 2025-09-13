@@ -249,11 +249,11 @@
           return;
         }
 
-    //     if (command.includes("open google") || (!STRICT_PHRASES && command.includes("google"))) {
-    //       speak("Opening Google.");
-    //       window.open("https://google.com", "_blank");
-    //       return;
-    //     }
+        if (command.includes("open google") || (!STRICT_PHRASES && command.includes("google"))) {
+          speak("Opening Google.");
+          window.open("https://google.com", "_blank");
+          return;
+        }
 
     //     if (command.includes("what's the time") || command.includes("what is the time")) {
     //       const time = new Date().toLocaleTimeString();
