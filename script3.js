@@ -255,11 +255,11 @@
           return;
         }
 
-    //     if (command.includes("what's the time") || command.includes("what is the time")) {
-    //       const time = new Date().toLocaleTimeString();
-    //       speak("The time is " + time);
-    //       return;
-    //     }
+        if (command.includes("what's the time") || command.includes("what is the time")) {
+          const time = new Date().toLocaleTimeString();
+          speak("The time is " + time);
+          return;
+        }
 
     //     if (command.includes("change background")) {
     //       document.body.style.background = "radial-gradient(1200px 800px at 25% -200px, #2a1e2d 0%, #1b1320 45%, #101419 100%)";
