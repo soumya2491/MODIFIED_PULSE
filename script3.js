@@ -180,25 +180,25 @@
         return;
       }
 
-    //   const recognition = new SR();
-    //   recognition.lang = "en-US";
-    //   recognition.interimResults = false;
-    //   recognition.maxAlternatives = 1;
+      const recognition = new SR();
+      recognition.lang = "en-US";
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
 
-    //   recognition.onstart = () => {
-    //     statusText.textContent = "Listening…";
-    //   };
+      recognition.onstart = () => {
+        statusText.textContent = "Listening…";
+      };
 
-    //   recognition.onresult = (event) => {
-    //     let transcript = (event.results?.[0]?.[0]?.transcript || "").toLowerCase().trim();
-    //     statusText.textContent = `You said: "${transcript}"`;
+      recognition.onresult = (event) => {
+        let transcript = (event.results?.[0]?.[0]?.transcript || "").toLowerCase().trim();
+        statusText.textContent = `You said: "${transcript}"`;
 
-    //     // Wake word gating
-    //     const wakeHit = WAKE_WORDS.find(w => transcript.startsWith(w));
-    //     if (!wakeHit) {
-    //       speak(`Please start your command with '${WAKE_WORDS[0]}'.`);
-    //       return;
-    //     }
+        // Wake word gating
+        const wakeHit = WAKE_WORDS.find(w => transcript.startsWith(w));
+        if (!wakeHit) {
+          speak(`Please start your command with '${WAKE_WORDS[0]}'.`);
+          return;
+        }
 
     //     // Remove wake word + any immediate comma/space
     //     let command = transcript.replace(new RegExp(`^${wakeHit}[, ]*`), "").trim();
