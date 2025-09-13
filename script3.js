@@ -88,13 +88,13 @@
         return `The result of division is ${parseFloat(m[1]) / divisor}.`;
       }
 
-    //   // Power: support "power 2 to 3", "2 raised to 3", "2 to the power of 3"
-    //   m = command.match(/\bpower (\d+\.?\d*) (?:to|of) (\d+\.?\d*)\b/);
-    //   if (!m) m = command.match(/\b(\d+\.?\d*) (?:raised to|to the power of) (\d+\.?\d*)\b/);
-    //   if (m) {
-    //     const base = parseFloat(m[1]), exp = parseFloat(m[2]);
-    //     return `The result of ${base} raised to the power ${exp} is ${Math.pow(base, exp)}.`;
-    //   }
+      // Power: support "power 2 to 3", "2 raised to 3", "2 to the power of 3"
+      m = command.match(/\bpower (\d+\.?\d*) (?:to|of) (\d+\.?\d*)\b/);
+      if (!m) m = command.match(/\b(\d+\.?\d*) (?:raised to|to the power of) (\d+\.?\d*)\b/);
+      if (m) {
+        const base = parseFloat(m[1]), exp = parseFloat(m[2]);
+        return `The result of ${base} raised to the power ${exp} is ${Math.pow(base, exp)}.`;
+      }
 
     //   // Square root
     //   m = command.match(/\bsquare root of (\d+\.?\d*)\b/);
