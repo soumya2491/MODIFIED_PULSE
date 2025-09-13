@@ -278,16 +278,16 @@
           return;
         }
 
-    //     if (command.includes("make me feel special")) {
-    //       const pickupLines = [
-    //         "The most intelligent women with a perfect smile  is in front of me!",
-    //         "Even the Moon has some imperfection but you . You aree justt perfect ",
-    //         "Octopuses have three hearts so what the most beautiful heart is still inside you!!"
-    //       ];
-    //       const pickupLine = pickupLines[Math.floor(Math.random() * pickupLines.length)];
-    //       speak(pickupLine);
-    //       return;
-    //     }
+        if (command.includes("make me feel special")) {
+          const pickupLines = [
+            "The most intelligent women with a perfect smile  is in front of me!",
+            "Even the Moon has some imperfection but you . You aree justt perfect ",
+            "Octopuses have three hearts so what the most beautiful heart is still inside you!!"
+          ];
+          const pickupLine = pickupLines[Math.floor(Math.random() * pickupLines.length)];
+          speak(pickupLine);
+          return;
+        }
 
     //     if (command.includes("motivate me")) {
     //       const quotes = [
