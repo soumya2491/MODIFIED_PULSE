@@ -113,25 +113,25 @@
         return `The factorial of ${n} is ${f}.`;
       }
 
-    //   // Trig (degrees)
-    //   m = command.match(/\b(?:sine|sin) of (\d+\.?\d*) degrees?\b/);
-    //   if (m) {
-    //     const deg = parseFloat(m[1]);
-    //     return `The sine of ${deg} degrees is ${Math.sin(degToRad(deg)).toFixed(6)}.`;
-    //   }
-    //   m = command.match(/\b(?:cosine|cos) of (\d+\.?\d*) degrees?\b/);
-    //   if (m) {
-    //     const deg = parseFloat(m[1]);
-    //     return `The cosine of ${deg} degrees is ${Math.cos(degToRad(deg)).toFixed(6)}.`;
-    //   }
-    //   m = command.match(/\b(?:tangent|tan) of (\d+\.?\d*) degrees?\b/);
-    //   if (m) {
-    //     const deg = parseFloat(m[1]);
-    //     return `The tangent of ${deg} degrees is ${Math.tan(degToRad(deg)).toFixed(6)}.`;
-    //   }
+      // Trig (degrees)
+      m = command.match(/\b(?:sine|sin) of (\d+\.?\d*) degrees?\b/);
+      if (m) {
+        const deg = parseFloat(m[1]);
+        return `The sine of ${deg} degrees is ${Math.sin(degToRad(deg)).toFixed(6)}.`;
+      }
+      m = command.match(/\b(?:cosine|cos) of (\d+\.?\d*) degrees?\b/);
+      if (m) {
+        const deg = parseFloat(m[1]);
+        return `The cosine of ${deg} degrees is ${Math.cos(degToRad(deg)).toFixed(6)}.`;
+      }
+      m = command.match(/\b(?:tangent|tan) of (\d+\.?\d*) degrees?\b/);
+      if (m) {
+        const deg = parseFloat(m[1]);
+        return `The tangent of ${deg} degrees is ${Math.tan(degToRad(deg)).toFixed(6)}.`;
+      }
 
-    //   return null;
-    // }
+      return null;
+    }
 
 
     // const WAKE_WORDS = ["pulse"]; // add "jarvis", "friday" if you want
