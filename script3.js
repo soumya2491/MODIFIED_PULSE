@@ -315,25 +315,25 @@
         }
 
    
-    //     speak("Sorry, ma'am. Can you repeat that again?");
-    //   };
+        speak("Sorry, ma'am. Can you repeat that again?");
+      };
 
-    //   recognition.onerror = (e) => {
-    //     console.error(e);
-    //     statusText.textContent = "Recognition error.";
-    //     speak("Sorry, I didn't catch that.");
-    //   };
+      recognition.onerror = (e) => {
+        console.error(e);
+        statusText.textContent = "Recognition error.";
+        speak("Sorry, I didn't catch that.");
+      };
 
-    //   recognition.onend = () => {
-    //     statusText.textContent = "IDLE";
-    //   };
+      recognition.onend = () => {
+        statusText.textContent = "IDLE";
+      };
 
-    //   recognition.start();
-    // }
+      recognition.start();
+    }
 
     
-    // document.getElementById("startButton").addEventListener("click", () => {
-    //   speak("Hello. Welcome back, ma'am. Initializing PULSE.");
-    //   setTimeout(startListening, 700);
-    //   statusText.textContent = "ARMED";
-    // });
+    document.getElementById("startButton").addEventListener("click", () => {
+      speak("Hello. Welcome back, ma'am. Initializing PULSE.");
+      setTimeout(startListening, 700);
+      statusText.textContent = "ARMED";
+    });
