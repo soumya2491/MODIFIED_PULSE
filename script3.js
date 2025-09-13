@@ -104,14 +104,14 @@
         return `The square root of ${n} is ${Math.sqrt(n)}.`;
       }
 
-    //   // Factorial
-    //   m = command.match(/\bfactorial of (\d+)\b/);
-    //   if (m) {
-    //     const n = parseInt(m[1], 10);
-    //     const f = factorial(n);
-    //     if (f === null) return "Error, factorial of negative number not defined.";
-    //     return `The factorial of ${n} is ${f}.`;
-    //   }
+      // Factorial
+      m = command.match(/\bfactorial of (\d+)\b/);
+      if (m) {
+        const n = parseInt(m[1], 10);
+        const f = factorial(n);
+        if (f === null) return "Error, factorial of negative number not defined.";
+        return `The factorial of ${n} is ${f}.`;
+      }
 
     //   // Trig (degrees)
     //   m = command.match(/\b(?:sine|sin) of (\d+\.?\d*) degrees?\b/);
