@@ -27,18 +27,18 @@
         .catch(() => window.particlesJS('particles-js', fallback));
     })();
 
-    // const statusText = document.getElementById("status");
-    // const synth = window.speechSynthesis;
+    const statusText = document.getElementById("status");
+    const synth = window.speechSynthesis;
 
-    // let preferredVoice = null;
-    // function pickVoice() {
-    //   const voices = synth.getVoices();
+    let preferredVoice = null;
+    function pickVoice() {
+      const voices = synth.getVoices();
 
-    //   preferredVoice =
-    //     voices.find(v => /english/i.test(v.lang) && /male|daniel|george|david|microsoft|google/i.test(v.name)) ||
-    //     voices.find(v => /en-US|en-GB/i.test(v.lang)) ||
-    //     voices[0] || null;
-    // }
+      preferredVoice =
+        voices.find(v => /english/i.test(v.lang) && /male|daniel|george|david|microsoft|google/i.test(v.name)) ||
+        voices.find(v => /en-US|en-GB/i.test(v.lang)) ||
+        voices[0] || null;
+    }
     // if (synth.onvoiceschanged !== undefined) {
     //   synth.onvoiceschanged = pickVoice;
     // }
