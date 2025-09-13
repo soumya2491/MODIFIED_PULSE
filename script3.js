@@ -96,13 +96,13 @@
         return `The result of ${base} raised to the power ${exp} is ${Math.pow(base, exp)}.`;
       }
 
-    //   // Square root
-    //   m = command.match(/\bsquare root of (\d+\.?\d*)\b/);
-    //   if (m) {
-    //     const n = parseFloat(m[1]);
-    //     if (n < 0) return "Error, negative input for square root.";
-    //     return `The square root of ${n} is ${Math.sqrt(n)}.`;
-    //   }
+      // Square root
+      m = command.match(/\bsquare root of (\d+\.?\d*)\b/);
+      if (m) {
+        const n = parseFloat(m[1]);
+        if (n < 0) return "Error, negative input for square root.";
+        return `The square root of ${n} is ${Math.sqrt(n)}.`;
+      }
 
     //   // Factorial
     //   m = command.match(/\bfactorial of (\d+)\b/);
