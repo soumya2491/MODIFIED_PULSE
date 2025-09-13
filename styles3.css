@@ -80,7 +80,7 @@ button:hover {
   left: 50%;
   margin: -70px 0 0 -70px;
 }
-/* 
+
 .pulse-ring:nth-child(2) {
   animation-delay: 0.8s;
   width: 180px;
@@ -99,7 +99,7 @@ button:hover {
   background: radial-gradient(circle, rgba(0, 255, 255, 0.15), transparent 70%);
 }
 
-@keyframes pulseGlow {
+/* @keyframes pulseGlow {
   0% {
     transform: scale(0.7);
     opacity: 0.8;
