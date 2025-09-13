@@ -300,19 +300,19 @@
           return;
         }
 
-    //     if (command.includes("self destruct")) {
-    //       let count = 5;
-    //       const timer = setInterval(() => {
-    //         if (count >= 0) {
-    //           speak(String(count));
-    //           count--;
-    //         } else {
-    //           clearInterval(timer);
-    //           speak("Boom. Just kidding, ma'am.");
-    //         }
-    //       }, 1000);
-    //       return;
-    //     }
+        if (command.includes("self destruct")) {
+          let count = 5;
+          const timer = setInterval(() => {
+            if (count >= 0) {
+              speak(String(count));
+              count--;
+            } else {
+              clearInterval(timer);
+              speak("Boom. Just kidding, ma'am.");
+            }
+          }, 1000);
+          return;
+        }
 
    
     //     speak("Sorry, ma'am. Can you repeat that again?");
