@@ -267,16 +267,16 @@
           return;
         }
 
-    //     if (command.includes("tell me a joke")) {
-    //       const jokes = [
-    //         "You know what moon is more beautiful than you !! just joking haha",
-    //         "I told my computer I needed a break, and it started installing updates.",
-    //         "There are 10 kinds of people: those who understand binary and those who don't."
-    //       ];
-    //       const joke = jokes[Math.floor(Math.random() * jokes.length)];
-    //       speak(joke);
-    //       return;
-    //     }
+        if (command.includes("tell me a joke")) {
+          const jokes = [
+            "You know what moon is more beautiful than you !! just joking haha",
+            "I told my computer I needed a break, and it started installing updates.",
+            "There are 10 kinds of people: those who understand binary and those who don't."
+          ];
+          const joke = jokes[Math.floor(Math.random() * jokes.length)];
+          speak(joke);
+          return;
+        }
 
     //     if (command.includes("make me feel special")) {
     //       const pickupLines = [
