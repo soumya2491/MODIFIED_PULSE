@@ -207,18 +207,18 @@
           return;
         }
 
-    //     // Restrict to allowed commands
-    //     if (!isAllowedCommand(command)) {
-    //       speak("Command not recognized or not allowed, ma'am.");
-    //       return;
-    //     }
+        // Restrict to allowed commands
+        if (!isAllowedCommand(command)) {
+          speak("Command not recognized or not allowed, ma'am.");
+          return;
+        }
 
-    //     // Try math first (exact parsing)
-    //     const mathResponse = computeCommand(command);
-    //     if (mathResponse) {
-    //       speak(mathResponse);
-    //       return;
-    //     }
+        // Try math first (exact parsing)
+        const mathResponse = computeCommand(command);
+        if (mathResponse) {
+          speak(mathResponse);
+          return;
+        }
 
     //     // ----- Non-math commands -----
     //     if (command.includes("notepad")) {
