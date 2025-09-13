@@ -171,14 +171,14 @@
       }
     }
 
-    // /* ---------------- Speech Recognition lifecycle ----------------- */
-    // function startListening() {
-    //   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-    //   if (!SR) {
-    //     statusText.textContent = "SpeechRecognition not supported.";
-    //     speak("Speech recognition is not supported in this browser.");
-    //     return;
-    //   }
+    /* ---------------- Speech Recognition lifecycle ----------------- */
+    function startListening() {
+      const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SR) {
+        statusText.textContent = "SpeechRecognition not supported.";
+        speak("Speech recognition is not supported in this browser.");
+        return;
+      }
 
     //   const recognition = new SR();
     //   recognition.lang = "en-US";
