@@ -200,12 +200,12 @@
           return;
         }
 
-    //     // Remove wake word + any immediate comma/space
-    //     let command = transcript.replace(new RegExp(`^${wakeHit}[, ]*`), "").trim();
-    //     if (!command) {
-    //       speak("Awaiting your command.");
-    //       return;
-    //     }
+        // Remove wake word + any immediate comma/space
+        let command = transcript.replace(new RegExp(`^${wakeHit}[, ]*`), "").trim();
+        if (!command) {
+          speak("Awaiting your command.");
+          return;
+        }
 
     //     // Restrict to allowed commands
     //     if (!isAllowedCommand(command)) {
