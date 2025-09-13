@@ -137,28 +137,28 @@
     const WAKE_WORDS = ["pulse"]; // add "jarvis", "friday" if you want
     const STRICT_PHRASES = false; // set to true to require exact phrases like "open google" (so "google" alone won't work)
 
-    // const allowedCommands = [
-    //   // math keywords (loose: computeCommand has strict regex anyway)
-    //   "add", "subtract", "multiply", "divide",
-    //   "power", "raised to", "to the power of",
-    //   "square root", "factorial",
-    //   "sine", "cosine", "tangent", "sin", "cos", "tan",
+    const allowedCommands = [
+      // math keywords (loose: computeCommand has strict regex anyway)
+      "add", "subtract", "multiply", "divide",
+      "power", "raised to", "to the power of",
+      "square root", "factorial",
+      "sine", "cosine", "tangent", "sin", "cos", "tan",
 
-    //   // utilities
-    //   "notepad",
-    //   "status report", "status",
-    //   "shutdown",
-    //   "instagram",
-    //   "youtube",
-    //   "open google",
-    //   "what's the time", "what is the time",
-    //   "change background",
+      // utilities
+      "notepad",
+      "status report", "status",
+      "shutdown",
+      "instagram",
+      "youtube",
+      "open google",
+      "what's the time", "what is the time",
+      "change background",
 
-    //   "tell me a joke",
-    //   "tell me a fact",
-    //   "motivate me",
-    //   "self destruct"
-    // ];
+      "tell me a joke",
+      "tell me a fact",
+      "motivate me",
+      "self destruct"
+    ];
 
     // function isAllowedCommand(cmd) {
     //   if (STRICT_PHRASES) {
