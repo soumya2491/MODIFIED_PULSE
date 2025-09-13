@@ -243,11 +243,11 @@
           return;
         }
 
-    //     if (command.includes("youtube")) {
-    //       speak("Opening YouTube.");
-    //       window.open("https://youtube.com", "_blank");
-    //       return;
-    //     }
+        if (command.includes("youtube")) {
+          speak("Opening YouTube.");
+          window.open("https://youtube.com", "_blank");
+          return;
+        }
 
     //     if (command.includes("open google") || (!STRICT_PHRASES && command.includes("google"))) {
     //       speak("Opening Google.");
