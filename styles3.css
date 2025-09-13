@@ -67,7 +67,7 @@ button:hover {
 }
 
 /* Pulse rings - keep position absolute inside pulse container to center them */
-/* .pulse-ring {
+.pulse-ring {
   position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 20px 4px rgba(0, 180, 255, 0.8);
@@ -80,7 +80,7 @@ button:hover {
   left: 50%;
   margin: -70px 0 0 -70px;
 }
-
+/* 
 .pulse-ring:nth-child(2) {
   animation-delay: 0.8s;
   width: 180px;
