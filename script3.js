@@ -237,11 +237,11 @@
           return;
         }
 
-        // if (command.includes("instagram")) {
-        //   speak("Opening your Instagram profile, ma'am.");
-        //   window.open("https://instagram.com/soumyaa_24/", "_blank");
-        //   return;
-        // }
+        if (command.includes("instagram")) {
+          speak("Opening your Instagram profile, ma'am.");
+          window.open("https://instagram.com/soumyaa_24/", "_blank");
+          return;
+        }
 
     //     if (command.includes("youtube")) {
     //       speak("Opening YouTube.");
