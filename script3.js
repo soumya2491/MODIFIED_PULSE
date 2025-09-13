@@ -261,11 +261,11 @@
           return;
         }
 
-    //     if (command.includes("change background")) {
-    //       document.body.style.background = "radial-gradient(1200px 800px at 25% -200px, #2a1e2d 0%, #1b1320 45%, #101419 100%)";
-    //       speak("Background changed.");
-    //       return;
-    //     }
+        if (command.includes("change background")) {
+          document.body.style.background = "radial-gradient(1200px 800px at 25% -200px, #2a1e2d 0%, #1b1320 45%, #101419 100%)";
+          speak("Background changed.");
+          return;
+        }
 
     //     if (command.includes("tell me a joke")) {
     //       const jokes = [
