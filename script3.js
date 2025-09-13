@@ -289,16 +289,16 @@
           return;
         }
 
-    //     if (command.includes("motivate me")) {
-    //       const quotes = [
-    //         "Believe you can and you're halfway there.",
-    //         "Your limitation is only your imagination.",
-    //         "Small steps every day lead to big results."
-    //       ];
-    //       const quote = quotes[Math.floor(Math.random() * quotes.length)];
-    //       speak(quote);
-    //       return;
-    //     }
+        if (command.includes("motivate me")) {
+          const quotes = [
+            "Believe you can and you're halfway there.",
+            "Your limitation is only your imagination.",
+            "Small steps every day lead to big results."
+          ];
+          const quote = quotes[Math.floor(Math.random() * quotes.length)];
+          speak(quote);
+          return;
+        }
 
     //     if (command.includes("self destruct")) {
     //       let count = 5;
