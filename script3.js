@@ -56,14 +56,14 @@
     }
 
  
-    // function factorial(n) {
-    //   if (n < 0) return null;
-    //   if (n <= 1) return 1;
-    //   let f = 1;
-    //   for (let i = 2; i <= n; i++) f *= i;
-    //   return f;
-    // }
-    // const degToRad = deg => deg * Math.PI / 180;
+    function factorial(n) {
+      if (n < 0) return null;
+      if (n <= 1) return 1;
+      let f = 1;
+      for (let i = 2; i <= n; i++) f *= i;
+      return f;
+    }
+    const degToRad = deg => deg * Math.PI / 180;
 
 
     // function computeCommand(command) {
